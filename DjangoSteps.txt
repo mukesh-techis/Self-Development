@@ -1,0 +1,72 @@
+Django Steps:
+Step 1: Create a virtual environment using cmd =>>> python3 -m vent env
+Step 2: Activate virtual environment using cmd =>>> source env/bin/activate  //for windows =>>> env/bin/activate
+Step 3: Install Django using cmd =>>> pip3 install Django
+Step 4: Create a new project using cmd =>>> Django-admin startproject Django (or) =>>> python -m Django start project Django
+Step 5: Open Your project folder using cmd =>>> cd Django
+Step 6: Run the server using cmd =>>> python3 manage.py runserver
+Step 7: Press Control+c To stop the server
+Step 8: Create an app using cmd =>>> python3 manage.py startapp subappone 
+Step 9: Create Database using cmd =>>> python3 manage.py makemigrations
+Step 10: Create database tables using cmd =>>> python3 manage.py migrate
+Step 11: Create Admin panel using cmd =>>> python3 manage.py createsuperuser
+	 Enter Username: #####
+	 mail(optional):_______
+	 password : *****
+ Confirm password : *****
+_______________________________________________________________________________________________________________________________________________________
+
+
+Open the Django app in Visual Studio Code:
+
+Open Settings.py >>>(line 33) INSTALLED APPS[
+			34 >>> 'subappone',  //add your app name in settings.py
+Create a file 'urls.py' in the app folder subappone
+
+Open 'urls.py/Dajngo' in the project folder, copy line 17 and paste in 'urls.py/subappone'
+
+Create url pattern and add these lines from 2nd line in  'urls.py/subappone'
+		import the views using "from . import views"
+
+			>>> url patterns = [
+   				 path('',include('subappone.urls')),
+
+			]
+
+Open 'urls.py/Django' add 'include' in line 17 as below
+
+			from django.urls import path, include 
+
+In 'urlpattern' add a following line in line 21
+
+   		 path('',include('subappone.urls')),
+
+Open 'views.py/subappone'
+Import httpResponse in line 2 >>> from django.http import HttpResponse
+
+Add a function in the same, line 4 >>>	def home(request):
+    						return HttpResponse("hello world")
+
+In urls.py/subappone add a line for about function in line 6
+   			 path('about/',views.about, name='about')
+
+Create an about function in views.py in line 7
+					def about(request):
+   						 return render(request,'subappone/about.html')
+Create an about.html page for your Django project., for that create another folder called 'templates' in 'subappone' folder
+Inside templates create a folder called subappone which matches the same name as the app name.
+Create 'about.html' inside 'templates/subappone'
+Add a simple html code : <h1> About Page </h1>
+Redirect to 'views.py/subappone' add a line in line 8: =>>> context={} // to pass any context in views	add a modification in line no 9. context=context. Like below
+    return render(request,'subappone/about.html' context=context)
+
+Make migrations to your Django project: =>>> python3 manage.py makemigrations
+					=>>> python3 manage.py migrate
+
+Open 'models.py/subappone' add line 4:
+
+
+class car(models.Model):
+    name = models.CharField(max_length=200)
+
+

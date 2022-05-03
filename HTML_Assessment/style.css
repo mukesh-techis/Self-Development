@@ -1,0 +1,315 @@
+/*
+*Common
+**************************/
+
+
+body{
+    margin:0;
+    padding: 0;
+
+}
+
+
+
+
+
+/*
+*main
+**************************/
+
+
+.main{
+    position: relative;
+}
+
+.main img.background{
+
+    width: 100%;
+}
+
+.main .header{
+    position: absolute;
+    top: 1%;
+    left:20%;
+    width:60%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.main .header img {
+    width:8%;
+}
+.main .header ul{
+    display: flex;
+}
+
+.main .header li{
+    list-style: none;
+    padding-left:20px;
+}
+
+.main .header li a{
+    font-style: italic;
+    color:#FFFFFF;
+    font-size: 1.8vw;
+}
+
+.main .text-losangels{
+    position: absolute;
+    top:38%;
+    left:30%;
+    width:40%;
+    z-index: 1;
+}
+
+
+.main .mountain-left{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:53%;
+    z-index: 2;
+}
+
+
+.main .mountain-right{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:53%;
+    z-index: 3;
+}
+
+.main .bottom-img{
+    width:5%;
+}
+
+.first-padding{
+    display: flex;
+    justify-content: space-evenly;
+}
+.first-padding img{
+    width:10%;
+}
+
+
+.first-padding ul{
+    display:flex;
+}
+
+.first-padding li{
+    list-style: none;
+    padding-left:20px;
+}
+.first-padding li a{
+
+    font-style: italic;
+    color:#464B57;
+    font-size: 1.8vw;
+}
+
+
+/*
+*     History
+**************************/
+
+.history{
+    position: relative;
+}
+
+.history .history-mountain{
+    width:100%;
+
+}
+
+/* 
+.history .header{
+    position: absolute;
+    top: 7%;
+    left: 17%;
+} */
+
+.history .header .no-one{
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    width: 13%;
+
+}
+
+
+.history .history-para-img{
+    position: absolute;
+    top: 18%;
+    width: 55%;
+    left: 22%;
+    z-index: 1;
+}
+.history .trans-bar{
+    display: flex;
+}
+
+.history .history-trans-bar{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* z-index: 2; */
+    justify-content: space-around;
+    display: flex;
+    align-items: center
+}
+.history .bottom-img{
+    position: absolute;
+    justify-content: space-around;
+    left: 24%;
+    bottom: 5%;
+    z-index: 3;
+    width: 52%;
+    display: flex;
+}
+
+.history-padding{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin-top: 2%;
+    gap: 3%;
+}
+
+.bottom-img img{
+    width:24%;
+}
+
+.history-padding .climb_padding_img{
+    width:15%;
+
+}
+.history-padding .climb-para{
+    width:45%;
+    
+}
+
+
+/* Mountain */
+
+.mountain{
+    position:relative;
+}
+/* .mountain .transbar-one{
+    position: absolute;
+    z-index: 1;
+} */
+
+/* .mountain ul{
+    /* position: absolute; *
+    z-index: 1;
+    display: flex;
+    list-style: none;
+} */
+
+/*
+***** Climb     *********
+*************************/
+
+.climb{
+    position: relative;
+    width: 100%;
+    background-color: #414F6A;
+}
+
+.climb-bg{
+    width: 100%;
+    position:relative;
+}
+
+.climb .schedule th{
+    width: 23%;
+    height: 38%;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+}
+.climb .m0{
+    margin:0;
+    padding:0;
+}
+
+
+.climb .mountain ul{
+    /* width: 100%; */
+    /* height: 15%; */
+    background-color: #414F6A;
+    display:flex;
+    margin:0 auto;
+    list-style: none;
+    padding-left: 21%;
+    gap: 3%;
+}
+
+
+
+.climb .mountain ul .white-bg{
+    color:#414F6A;
+    background-color: white;
+
+
+}
+
+.climb .mountain ul a{
+    color:white;
+}
+
+.climb table{
+    position: absolute;
+    top: 15%;
+    left: 21%;
+    font-family: arial;
+    /* font-size: 4%; */
+    padding: 2%;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.climb table td{
+    padding:1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10%;
+}
+
+.climb-padding{
+    position: absolute;
+    background-color: #414F6A;
+    width: 100%;
+}
+
+
+/* 
+@media screen and (max-width:600px){
+.history .bottom-img{
+    position: absolute;
+    left: 18%;
+    bottom: 3%;
+    
+}
+} */
+
+footer {
+    position: relative;
+    height: 4vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: #414F6A;
+}
+.foot{
+    padding: 0;
+    background-color: #414F6A;
+}
+footer img {
+    width:7%;
+}
+
+span{
+    font-style: italic;
+    font-size: 0.8vw;
+    padding-top: 1%;
+}
+
